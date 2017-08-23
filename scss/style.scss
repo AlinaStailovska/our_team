@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+$transition-duration : .5s;
+$yellow : #ffcc00;
+$font : #666666;
+
+* {
+	text-align: center;
+	box-sizing: border-box;
+	-webkit-transition: all $transition-duration ease;
+	   -moz-transition: all $transition-duration ease;
+	    -ms-transition: all $transition-duration ease;
+	     -o-transition: all $transition-duration ease;
+	        transition: all $transition-duration ease;
+}
+
+html, body {
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.team {
+	padding: 100px 0;
+	&__title {
+		color: $yellow;
+		font-size: 60px;
+		text-transform: uppercase;
+		margin-top: 0;
+		position: relative;
+		&:after, &:before {
+			content: url(../img/bonfire-icon.png);
+			position: absolute;
+			bottom: -40px;
+			left: 50%;
+			background-color: #fff;
+			display: inline-block;
+			padding: 0 10px;
+			font-size: 0;
+			-webkit-transform: translate(-50%, 0);
+			   -moz-transform: translate(-50%, 0);
+			    -ms-transform: translate(-50%, 0);
+			     -o-transform: translate(-50%, 0);
+			        transform: translate(-50%, 0);
+		}
+		&:before {
+			content: '';
+			width: 460px;
+			display: block;
+			border-bottom: 1px solid $yellow;
+			bottom: -30px;
+		}
+	}
+	&__subtitle {
+		color: #898f8f;
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+}
+
+.slider {
+	// max-height: 560px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__arrow {
+		height: 25px;
+		width: 15px;
+		display: inline-block;
+
+	}
+	&__border {
+		height: 420px;
+		width: 420px;
+		border: 1px solid $yellow;
+		display: inline-block;
+		padding: 15px;
+		margin-right: 50px;
+	}
+	&__foto {
+		max-width: 390px;
+		max-height: 390px;
+		border: 1px solid $yellow;
+		display:inline-block;
+	}
+	&__tract {
+		width: 0;
+		height: 560px;
+		border: 1px solid $yellow;
+		display:inline-block;
+		margin: 0 90px 0 90px;
+		position: absolute; 
+		left: 42%;
+		-webkit-transform: translate(-50%, 0);
+			   -moz-transform: translate(-50%, 0);
+			    -ms-transform: translate(-50%, 0);
+			     -o-transform: translate(-50%, 0);
+			        transform: translate(-50%, 0);
+	}
+
+	&__info {
+		display:inline-block;
+		width: 420px;
+		height: 420px;
+		margin-left: 50px;
+		color: $font;
+
+		&-name {
+		font-size: 50px;
+		font-weight: 700;
+		display: inline-block;
+		margin-top: 0;
+		}
+
+		&-line {
+		width: 100px;
+		height: 0;
+		border: 1px solid $yellow;
+		margin: 0 auto 25px;
+		}
+		
+		&-profession {
+		font-size: 23px;
+		font-weight: 400;
+		letter-spacing: 1px;
+		}
+
+		&-socials {
+			margin: 0 30px auto 0;
+			&--fb,
+			&--tw,
+			&--gl,
+			&--ln {
+				display: inline-block;
+				width: 35px;
+				height: 35px;
+				background-repeat: no-repeat;
+			}
+			&--fb {
+				background-image: url(../img/facebook.png);
+			}
+
+			&--tw {
+				background-image: url(../img/twitter.png);
+			}
+
+			&--gl {
+				background-image: url(../img/google-plus.png);
+			}
+
+			&--ln {background-image: url(../img/linked-in.png);
+			}
+		}
+		&-text {
+			font-size: 14px;
+			font-weight: 300;
+			text-align: center;
+			line-height: 23px;
+			max-height: 120px;
+			overflow: hidden;
+		}
+		&-line--bold {
+			margin: 0 auto 35px;;
+			font-size: 0;
+			&-sm {
+				display: inline-block;
+				width: 10px;
+				height:4px;
+				background-color: $yellow;
+			}
+			&-lg {
+				display: inline-block;
+				width: 20px;
+				height:4px;
+				background-color: $yellow;
+				margin:  auto 3px auto 3px;
+			}
+		}
+		&-link {
+			font-size: 14px;
+			font-weight: 700;
+			border:1px solid $yellow;
+			text-transform: uppercase;
+			padding: 5px 10px;
+			text-decoration: none;
+			color: $font; 
+			// margin: auto;
+			text-align: center; 
+		}
+	}
+
+.small__slider {
+	font-size: 10px;
+	// margin: auto;
+	&--yl,
+	&--wh {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		background:$yellow;
+		border: 1px solid $yellow;
+		border-radius: 50%;
+	}
+
+	&--wh {
+		background-color:#fff;
+
+	}
+}
+
+// .ss {
+// 	width: 10px;
+// 	height: 10px;
+// 	border: 10px solid $yellow ;
+// 	border-radius: 50%;
+// 	background-color: red;
+// }
+}
+
+

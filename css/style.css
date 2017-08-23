@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+* {
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+html, body {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px; }
+
+.container {
+  width: 1140px;
+  margin: 0 auto; }
+
+.team {
+  padding: 100px 0; }
+  .team__title {
+    color: #ffcc00;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-top: 0;
+    position: relative; }
+    .team__title:after, .team__title:before {
+      content: url(../img/bonfire-icon.png);
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      background-color: #fff;
+      display: inline-block;
+      padding: 0 10px;
+      font-size: 0;
+      -webkit-transform: translate(-50%, 0);
+      -moz-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      -o-transform: translate(-50%, 0);
+      transform: translate(-50%, 0); }
+    .team__title:before {
+      content: '';
+      width: 460px;
+      display: block;
+      border-bottom: 1px solid #ffcc00;
+      bottom: -30px; }
+  .team__subtitle {
+    color: #898f8f;
+    font-size: 18px;
+    text-transform: uppercase; }
+
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .slider__arrow {
+    height: 25px;
+    width: 15px;
+    display: inline-block; }
+  .slider__border {
+    height: 420px;
+    width: 420px;
+    border: 1px solid #ffcc00;
+    display: inline-block;
+    padding: 15px;
+    margin-right: 50px; }
+  .slider__foto {
+    max-width: 390px;
+    max-height: 390px;
+    border: 1px solid #ffcc00;
+    display: inline-block; }
+  .slider__tract {
+    width: 0;
+    height: 560px;
+    border: 1px solid #ffcc00;
+    display: inline-block;
+    margin: 0 90px 0 90px;
+    position: absolute;
+    left: 42%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); }
+  .slider__info {
+    display: inline-block;
+    width: 420px;
+    height: 420px;
+    margin-left: 50px;
+    color: #666666; }
+    .slider__info-name {
+      font-size: 50px;
+      font-weight: 700;
+      display: inline-block;
+      margin-top: 0; }
+    .slider__info-line {
+      width: 100px;
+      height: 0;
+      border: 1px solid #ffcc00;
+      margin: 0 auto 25px; }
+    .slider__info-profession {
+      font-size: 23px;
+      font-weight: 400;
+      letter-spacing: 1px; }
+    .slider__info-socials {
+      margin: 0 30px auto 0; }
+      .slider__info-socials--fb, .slider__info-socials--tw, .slider__info-socials--gl, .slider__info-socials--ln {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        background-repeat: no-repeat; }
+      .slider__info-socials--fb {
+        background-image: url(../img/facebook.png); }
+      .slider__info-socials--tw {
+        background-image: url(../img/twitter.png); }
+      .slider__info-socials--gl {
+        background-image: url(../img/google-plus.png); }
+      .slider__info-socials--ln {
+        background-image: url(../img/linked-in.png); }
+    .slider__info-text {
+      font-size: 14px;
+      font-weight: 300;
+      text-align: center;
+      line-height: 23px;
+      max-height: 120px;
+      overflow: hidden; }
+    .slider__info-line--bold {
+      margin: 0 auto 35px;
+      font-size: 0; }
+      .slider__info-line--bold-sm {
+        display: inline-block;
+        width: 10px;
+        height: 4px;
+        background-color: #ffcc00; }
+      .slider__info-line--bold-lg {
+        display: inline-block;
+        width: 20px;
+        height: 4px;
+        background-color: #ffcc00;
+        margin: auto 3px auto 3px; }
+    .slider__info-link {
+      font-size: 14px;
+      font-weight: 700;
+      border: 1px solid #ffcc00;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      text-decoration: none;
+      color: #666666;
+      text-align: center; }
+  .slider .small__slider {
+    font-size: 10px; }
+    .slider .small__slider--yl, .slider .small__slider--wh {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #ffcc00;
+      border: 1px solid #ffcc00;
+      border-radius: 50%; }
+    .slider .small__slider--wh {
+      background-color: #fff; }
